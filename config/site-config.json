@@ -1,0 +1,50 @@
+{
+    "site": {
+        "title": "IT Knowledge Base",
+        "description": "Centralized repository for IT documentation, guides, and standard operating procedures",
+        "urlAlias": "kb",
+        "template": "SITEPAGEPUBLISHING#0",
+        "owner": "admin@tenant.onmicrosoft.com",
+        "timeZone": 13,
+        "locale": 1033,
+        "sharingCapability": "ExternalUserAndGuestSharing"
+    },
+    "branding": {
+        "headerLayout": "Standard",
+        "headerBackground": "Strong",
+        "theme": {
+            "name": "Blue",
+            "isInverted": false
+        },
+        "logoUrl": "/SiteAssets/kb-logo.png",
+        "siteLogoDescription": "Knowledge Base Logo"
+    },
+    "navigation": {
+        "showQuickLaunch": true,
+        "showTopNav": true,
+        "megaMenuEnabled": true
+    },
+    "features": {
+        "enableMetadataNavigation": true,
+        "enableSearch": true,
+        "enableSiteDesigns": true,
+        "enableVersioning": true,
+        "majorVersions": 10,
+        "minorVersions": 5
+    },
+    "searchSettings": {
+        "searchBoxPlaceholder": "Search knowledge articles...",
+        "searchResultTypes": [
+            "Pages",
+            "Documents"
+        ],
+        "enableSearchSuggestions": true
+    },
+    "homePage": {
+        "title": "Welcome to the IT Knowledge Base",
+        "layout": "Home",
+        "showNewsWebPart": true,
+        "showQuickLinksWebPart": true,
+        "showHeroWebPart": true
+    }
+}

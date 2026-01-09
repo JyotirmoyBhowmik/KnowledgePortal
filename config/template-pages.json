@@ -1,0 +1,172 @@
+{
+    "templates": [
+        {
+            "name": "Master Article Template",
+            "fileName": "template-master-article.aspx",
+            "description": "Standard template for knowledge base articles with sections for overview, steps, and related links",
+            "promotedState": 2,
+            "layout": "Article",
+            "sections": [
+                {
+                    "order": 1,
+                    "type": "header",
+                    "webParts": [
+                        {
+                            "type": "text",
+                            "title": "Article Title",
+                            "properties": {
+                                "text": "<h1>Article Title Goes Here</h1>"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "order": 2,
+                    "type": "oneColumn",
+                    "webParts": [
+                        {
+                            "type": "text",
+                            "title": "Overview",
+                            "properties": {
+                                "text": "<h2>Overview</h2><p>Provide a brief introduction to this topic. Explain what the reader will learn and why it matters.</p>"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "order": 3,
+                    "type": "oneColumn",
+                    "webParts": [
+                        {
+                            "type": "text",
+                            "title": "Prerequisites",
+                            "properties": {
+                                "text": "<h2>Prerequisites</h2><ul><li>Prerequisite 1</li><li>Prerequisite 2</li><li>Prerequisite 3</li></ul>"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "order": 4,
+                    "type": "oneColumn",
+                    "webParts": [
+                        {
+                            "type": "text",
+                            "title": "Step-by-Step Instructions",
+                            "properties": {
+                                "text": "<h2>Step-by-Step Instructions</h2><h3>Step 1: [Action]</h3><p>Detailed instructions for step 1...</p><h3>Step 2: [Action]</h3><p>Detailed instructions for step 2...</p><h3>Step 3: [Action]</h3><p>Detailed instructions for step 3...</p>"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "order": 5,
+                    "type": "twoColumn",
+                    "webParts": [
+                        {
+                            "type": "text",
+                            "title": "Tips & Best Practices",
+                            "column": 1,
+                            "properties": {
+                                "text": "<h2>💡 Tips & Best Practices</h2><ul><li>Tip 1</li><li>Tip 2</li><li>Tip 3</li></ul>"
+                            }
+                        },
+                        {
+                            "type": "text",
+                            "title": "Common Issues",
+                            "column": 2,
+                            "properties": {
+                                "text": "<h2>⚠️ Common Issues</h2><ul><li>Issue 1 and solution</li><li>Issue 2 and solution</li></ul>"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "order": 6,
+                    "type": "oneColumn",
+                    "webParts": [
+                        {
+                            "type": "text",
+                            "title": "Related Articles",
+                            "properties": {
+                                "text": "<h2>Related Articles</h2><p>Add links to related knowledge base articles here.</p>"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "metadata": {
+                "fields": [
+                    {
+                        "name": "ArticleSummary",
+                        "value": "Brief summary of this article for search and card view"
+                    },
+                    {
+                        "name": "LastReviewDate",
+                        "value": "{{TODAY}}"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Quick Reference Template",
+            "fileName": "template-quick-reference.aspx",
+            "description": "Quick reference guide template with tables and checklists",
+            "promotedState": 2,
+            "layout": "Article",
+            "sections": [
+                {
+                    "order": 1,
+                    "type": "header",
+                    "webParts": [
+                        {
+                            "type": "text",
+                            "title": "Quick Reference Title",
+                            "properties": {
+                                "text": "<h1>Quick Reference: [Topic]</h1>"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "order": 2,
+                    "type": "oneColumn",
+                    "webParts": [
+                        {
+                            "type": "text",
+                            "title": "Reference Table",
+                            "properties": {
+                                "text": "<h2>Quick Reference</h2><table border='1' cellpadding='5'><thead><tr><th>Item</th><th>Description</th><th>Notes</th></tr></thead><tbody><tr><td>Item 1</td><td>Description</td><td>Notes</td></tr><tr><td>Item 2</td><td>Description</td><td>Notes</td></tr></tbody></table>"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "order": 3,
+                    "type": "oneColumn",
+                    "webParts": [
+                        {
+                            "type": "text",
+                            "title": "Checklist",
+                            "properties": {
+                                "text": "<h2>Checklist</h2><ul><li>☐ Task 1</li><li>☐ Task 2</li><li>☐ Task 3</li></ul>"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "metadata": {
+                "fields": [
+                    {
+                        "name": "ArticleSummary",
+                        "value": "Quick reference guide"
+                    },
+                    {
+                        "name": "LastReviewDate",
+                        "value": "{{TODAY}}"
+                    }
+                ]
+            }
+        }
+    ]
+}

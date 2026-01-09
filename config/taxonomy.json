@@ -1,0 +1,110 @@
+{
+  "termGroup": {
+    "name": "Enterprise Knowledge",
+    "description": "Term group for Knowledge Base taxonomy",
+    "id": "00000000-0000-0000-0000-000000000000"
+  },
+  "termSet": {
+    "name": "KB Structure",
+    "description": "Hierarchical structure for Knowledge Base navigation",
+    "owner": "IT Infrastructure Team",
+    "contact": "KB.Admin@company.com",
+    "isOpen": false,
+    "isAvailableForTagging": true
+  },
+  "terms": [
+    {
+      "name": "M365",
+      "id": "00000000-0000-0000-0000-000000000001",
+      "description": "Microsoft 365 Applications and Services",
+      "children": [
+        {
+          "name": "Teams",
+          "id": "00000000-0000-0000-0000-000000000011",
+          "description": "Microsoft Teams collaboration platform"
+        },
+        {
+          "name": "OneDrive",
+          "id": "00000000-0000-0000-0000-000000000012",
+          "description": "OneDrive for Business file storage"
+        },
+        {
+          "name": "Outlook",
+          "id": "00000000-0000-0000-0000-000000000013",
+          "description": "Outlook email and calendar"
+        },
+        {
+          "name": "SharePoint",
+          "id": "00000000-0000-0000-0000-000000000014",
+          "description": "SharePoint Online sites and collaboration"
+        }
+      ]
+    },
+    {
+      "name": "AI",
+      "id": "00000000-0000-0000-0000-000000000002",
+      "description": "Artificial Intelligence and Copilot",
+      "children": [
+        {
+          "name": "Copilot Chat",
+          "id": "00000000-0000-0000-0000-000000000021",
+          "description": "Microsoft Copilot conversational AI"
+        },
+        {
+          "name": "Copilot Pro",
+          "id": "00000000-0000-0000-0000-000000000022",
+          "description": "Advanced Copilot features and capabilities"
+        },
+        {
+          "name": "Copilot in M365",
+          "id": "00000000-0000-0000-0000-000000000023",
+          "description": "Copilot integrated in Microsoft 365 apps"
+        }
+      ]
+    },
+    {
+      "name": "Development",
+      "id": "00000000-0000-0000-0000-000000000003",
+      "description": "Software Development and DevOps",
+      "children": [
+        {
+          "name": "Azure DevOps",
+          "id": "00000000-0000-0000-0000-000000000031",
+          "description": "Azure DevOps pipelines and repos"
+        },
+        {
+          "name": "GitHub",
+          "id": "00000000-0000-0000-0000-000000000032",
+          "description": "GitHub repositories and actions"
+        },
+        {
+          "name": "Power Platform",
+          "id": "00000000-0000-0000-0000-000000000033",
+          "description": "Power Apps, Power Automate, Power BI"
+        }
+      ]
+    },
+    {
+      "name": "Security",
+      "id": "00000000-0000-0000-0000-000000000004",
+      "description": "Security and Compliance",
+      "children": [
+        {
+          "name": "Identity Management",
+          "id": "00000000-0000-0000-0000-000000000041",
+          "description": "Azure AD and identity governance"
+        },
+        {
+          "name": "Data Protection",
+          "id": "00000000-0000-0000-0000-000000000042",
+          "description": "DLP, encryption, and data security"
+        },
+        {
+          "name": "Compliance",
+          "id": "00000000-0000-0000-0000-000000000043",
+          "description": "Compliance center and policies"
+        }
+      ]
+    }
+  ]
+}

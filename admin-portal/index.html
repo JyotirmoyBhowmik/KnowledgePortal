@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Base - Admin Portal</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <rect width="32" height="32" rx="8" fill="url(#gradient)"/>
+                    <path d="M16 8L12 16H16L14 24L20 14H16L18 8H16Z" fill="white"/>
+                    <defs>
+                        <linearGradient id="gradient" x1="0" y1="0" x2="32" y2="32">
+                            <stop offset="0%" stopColor="#0078d4"/>
+                            <stop offset="100%" stop-color="#00bcf2"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="logo-text">KB Admin Portal</span>
+            </div>
+            <nav class="nav">
+                <a href="#dashboard" class="nav-link active">Dashboard</a>
+                <a href="#content" class="nav-link">Content</a>
+                <a href="#taxonomy" class="nav-link">Taxonomy</a>
+                <a href="#users" class="nav-link">Users</a>
+                <a href="#settings" class="nav-link">Settings</a>
+            </nav>
+            <div class="user-menu">
+                <div class="user-avatar" id="userAvatar">A</div>
+                <span class="user-name" id="userName">Admin</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Dashboard View -->
+        <div id="dashboard-view" class="view active">
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        📄
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-label">Total Articles</div>
+                        <div class="stat-value" id="totalArticles">0</div>
+                        <div class="stat-change positive">+12% this month</div>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        👁️
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-label">Total Views</div>
+                        <div class="stat-value" id="totalViews">0</div>
+                        <div class="stat-change positive">+24% this week</div>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        ⏳
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-label">Pending Approval</div>
+                        <div class="stat-value" id="pendingApproval">0</div>
+                        <div class="stat-change neutral">2 new today</div>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                        👥
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-label">Active Contributors</div>
+                        <div class="stat-value" id="activeContributors">0</div>
+                        <div class="stat-change positive">+3 this month</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charts Row -->
+            <div class="charts-row">
+                <div class="chart-card">
+                    <div class="card-header">
+                        <h2>Usage Trends</h2>
+                        <select class="period-select">
+                            <option>Last 7 days</option>
+                            <option>Last 30 days</option>
+                            <option>Last 90 days</option>
+                        </select>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="usageChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-card">
+                    <div class="card-header">
+                        <h2>Top Categories</h2>
+                    </div>
+                    <div class="categories-list" id="categoriesList">
+                        <div class="category-item">
+                            <div class="category-info">
+                                <span class="category-name">M365</span>
+                                <span class="category-count">156 articles</span>
+                            </div>
+                            <div class="category-bar">
+                                <div class="category-fill" style="width: 85%; background: linear-gradient(90deg, #667eea, #764ba2);"></div>
+                            </div>
+                        </div>
+                        <div class="category-item">
+                            <div class="category-info">
+                                <span class="category-name">AI</span>
+                                <span class="category-count">87 articles</span>
+                            </div>
+                            <div class="category-bar">
+                                <div class="category-fill" style="width: 65%; background: linear-gradient(90deg, #f093fb, #f5576c);"></div>
+                            </div>
+                        </div>
+                        <div class="category-item">
+                            <div class="category-info">
+                                <span class="category-name">Security</span>
+                                <span class="category-count">64 articles</span>
+                            </div>
+                            <div class="category-bar">
+                                <div class="category-fill" style="width: 48%; background: linear-gradient(90deg, #4facfe, #00f2fe);"></div>
+                            </div>
+                        </div>
+                        <div class="category-item">
+                            <div class="category-info">
+                                <span class="category-name">Development</span>
+                                <span class="category-count">52 articles</span>
+                            </div>
+                            <div class="category-bar">
+                                <div class="category-fill" style="width: 38%; background: linear-gradient(90deg, #43e97b, #38f9d7);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity & Top Articles -->
+            <div class="content-row">
+                <div class="activity-card">
+                    <div class="card-header">
+                        <h2>Recent Activity</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div class="activity-list" id="activityList">
+                        <div class="activity-item">
+                            <div class="activity-avatar">JD</div>
+                            <div class="activity-content">
+                                <div class="activity-text">
+                                    <strong>John Doe</strong> published <em>Teams Meeting Best Practices</em>
+                                </div>
+                                <div class="activity-time">2 hours ago</div>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-avatar">SM</div>
+                            <div class="activity-content">
+                                <div class="activity-text">
+                                    <strong>Sarah Miller</strong> updated <em>OneDrive Sync Guide</em>
+                                </div>
+                                <div class="activity-time">4 hours ago</div>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-avatar">MJ</div>
+                            <div class="activity-content">
+                                <div class="activity-text">
+                                    <strong>Mike Johnson</strong> created <em>Copilot Prompting Tips</em>
+                                </div>
+                                <div class="activity-time">Yesterday</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="top-articles-card">
+                    <div class="card-header">
+                        <h2>Top Articles</h2>
+                        <select class="period-select">
+                            <option>This Week</option>
+                            <option>This Month</option>
+                            <option>All Time</option>
+                        </select>
+                    </div>
+                    <div class="top-articles-list" id="topArticlesList">
+                        <div class="article-item">
+                            <div class="article-rank">1</div>
+                            <div class="article-info">
+                                <div class="article-title">How to Enable Teams Meetings</div>
+                                <div class="article-meta">2,456 views • M365/Teams</div>
+                            </div>
+                        </div>
+                        <div class="article-item">
+                            <div class="article-rank">2</div>
+                            <div class="article-info">
+                                <div class="article-title">OneDrive External Sharing Guide</div>
+                                <div class="article-meta">1,832 views • M365/OneDrive</div>
+                            </div>
+                        </div>
+                        <div class="article-item">
+                            <div class="article-rank">3</div>
+                            <div class="article-info">
+                                <div class="article-title">Copilot Chat Best Practices</div>
+                                <div class="article-meta">1,654 views • AI/Copilot</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pending Approvals -->
+            <div class="approvals-section">
+                <div class="card-header">
+                    <h2>Pending Approvals</h2>
+                    <span class="badge">3 items</span>
+                </div>
+                <div class="approvals-list" id="approvalsList">
+                    <div class="approval-item">
+                        <div class="approval-content">
+                            <div class="approval-title">SharePoint Site Permissions Guide</div>
+                            <div class="approval-meta">
+                                <span class="author">by Emily Chen</span>
+                                <span class="category">Security/Identity Management</span>
+                                <span class="timestamp">Submitted 2 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="approval-actions">
+                            <button class="btn btn-approve">✓ Approve</button>
+                            <button class="btn btn-reject">✗ Reject</button>
+                            <button class="btn btn-preview">👁️ Preview</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Connection Status -->
+    <div id="connectionStatus" class="connection-status">
+        <div class="status-indicator"></div>
+        <span class="status-text">Connecting to SharePoint...</span>
+    </div>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>

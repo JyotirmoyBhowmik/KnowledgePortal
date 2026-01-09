@@ -1,0 +1,77 @@
+Title,Summary,Category,Content
+"How to Enable Teams Meetings","Step-by-step guide for enabling and configuring Microsoft Teams meetings","M365/Teams","## Overview
+
+This guide explains how to enable Teams meetings in your organization.
+
+## Prerequisites
+
+- Microsoft 365 administrator access
+- Teams admin center permissions
+
+## Steps
+
+1. Navigate to Teams Admin Center
+2. Go to Meetings > Meeting Policies
+3. Select the policy to edit
+4. Enable 'Allow Meet Now'
+5. Enable 'Allow scheduling meetings'
+6. Save changes
+
+## Tips
+
+- Test with a pilot group first
+- Configure meeting options before rollout"
+"OneDrive External Sharing Best Practices","Security best practices for sharing files externally via OneDrive","M365/OneDrive","## Overview
+
+Learn how to securely share files with external users using OneDrive for Business.
+
+## Security Considerations
+
+- Use specific people sharing, not 'anyone with the link'
+- Set expiration dates for shared links
+- Enable password protection for sensitive files
+- Review shared items regularly
+
+## Steps
+
+1. Right-click file in OneDrive
+2. Select Share
+3. Choose 'Specific people'
+4. Enter external email
+5. Set permissions (View/Edit)
+6. Click Send
+
+## Best Practices
+
+- Document who you share with
+- Remove access when no longer needed
+- Use sensitivity labels for confidential files"
+"Copilot Prompting Tips","Effective prompting strategies for Microsoft Copilot","AI/Copilot Chat","## Overview
+
+Master the art of prompting Microsoft Copilot for better results.
+
+## Key Principles
+
+- Be specific and clear
+- Provide context
+- Use examples when possible
+- Iterate and refine
+
+## Best Prompts
+
+**Good:** 'Summarize this 10-page report focusing on budget recommendations'
+
+**Bad:** 'Summarize this'
+
+## Advanced Techniques
+
+- Chain multiple prompts
+- Use role-based prompting
+- Reference specific sections
+- Ask for formatting
+
+## Common Mistakes
+
+- Too vague
+- No context provided
+- Expecting perfect first attempt"

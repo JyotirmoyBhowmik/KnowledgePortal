@@ -1,0 +1,72 @@
+{
+    "groups": [
+        {
+            "name": "KB Visitors",
+            "description": "Read-only access to knowledge base content",
+            "permissionLevel": "Read",
+            "members": {
+                "addEveryone": true,
+                "excludeExternalUsers": true,
+                "azureADGroups": [],
+                "users": []
+            },
+            "settings": {
+                "allowMembersEditMembership": false,
+                "onlyAllowMembersViewMembership": false
+            }
+        },
+        {
+            "name": "KB Members",
+            "description": "Content contributors who can create and edit articles",
+            "permissionLevel": "Edit",
+            "members": {
+                "addEveryone": false,
+                "excludeExternalUsers": true,
+                "azureADGroups": [
+                    "IT-Staff@company.com",
+                    "Content-Contributors@company.com"
+                ],
+                "users": []
+            },
+            "settings": {
+                "allowMembersEditMembership": false,
+                "onlyAllowMembersViewMembership": true
+            }
+        },
+        {
+            "name": "KB Owners",
+            "description": "Knowledge Base administrators with full control",
+            "permissionLevel": "Full Control",
+            "members": {
+                "addEveryone": false,
+                "excludeExternalUsers": true,
+                "azureADGroups": [
+                    "IT-Admins@company.com",
+                    "SharePoint-Admins@company.com"
+                ],
+                "users": [
+                    "kb.admin@company.com"
+                ]
+            },
+            "settings": {
+                "allowMembersEditMembership": true,
+                "onlyAllowMembersViewMembership": true
+            }
+        }
+    ],
+    "permissions": {
+        "breakInheritance": true,
+        "copyRoleAssignments": false,
+        "clearSubscopes": true
+    },
+    "sitePages": {
+        "enableApproval": true,
+        "requireCheckout": false,
+        "approvers": {
+            "azureADGroups": [
+                "KB-Approvers@company.com"
+            ],
+            "users": []
+        }
+    }
+}
