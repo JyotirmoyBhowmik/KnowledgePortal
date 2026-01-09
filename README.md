@@ -61,6 +61,10 @@ A complete, production-ready SharePoint Online Knowledge Base solution featuring
    .\Test-KBDeployment.ps1 -SiteUrl "https://yourtenant.sharepoint.com/sites/kb" -GenerateReport
    ```
 
+📖 **For detailed step-by-step instructions with screenshots:** See [Step-by-Step Deployment Guide](docs/step-by-step-deployment-guide.md)
+
+🚀 **For quick reference:** See [QUICK-START.md](QUICK-START.md)
+
 ## Project Structure
 
 ```
@@ -212,7 +216,9 @@ See [Administrator Guide](docs/administrator-guide.md) for complete details.
 
 | Document | Description |
 |----------|-------------|
-| [Deployment Runbook](docs/deployment-runbook.md) | Complete deployment instructions |
+| [**Step-by-Step Deployment Guide**](docs/step-by-step-deployment-guide.md) | ⭐ Detailed guide with screenshots for deploying to SharePoint Online |
+| [Quick Start](QUICK-START.md) | Quick reference card for rapid deployment |
+| [Deployment Runbook](docs/deployment-runbook.md) | Technical deployment instructions and procedures |
 | [Administrator Guide](docs/administrator-guide.md) | Daily operations and maintenance |
 | [Content Contributor Guide](docs/content-contributor-guide.md) | Creating and managing articles |
 | [Governance Framework](docs/governance-framework.md) | Policies and procedures |
