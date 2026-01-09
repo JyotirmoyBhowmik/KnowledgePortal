@@ -61,9 +61,10 @@ A complete, production-ready SharePoint Online Knowledge Base solution featuring
    .\Test-KBDeployment.ps1 -SiteUrl "https://yourtenant.sharepoint.com/sites/kb" -GenerateReport
    ```
 
-📖 **For detailed step-by-step instructions with screenshots:** See [Step-by-Step Deployment Guide](docs/step-by-step-deployment-guide.md)
-
-🚀 **For quick reference:** See [QUICK-START.md](QUICK-START.md)
+📖 **Deployment Options:**
+- **PowerShell (Automated):** [Step-by-Step Deployment Guide](docs/step-by-step-deployment-guide.md) - Recommended for speed
+- **Browser Only (Manual):** [Manual Deployment Guide](docs/manual-deployment-guide.md) - No PowerShell required
+- **Quick Reference:** [QUICK-START.md](QUICK-START.md)
 
 ## Project Structure
 
@@ -216,7 +217,8 @@ See [Administrator Guide](docs/administrator-guide.md) for complete details.
 
 | Document | Description |
 |----------|-------------|
-| [**Step-by-Step Deployment Guide**](docs/step-by-step-deployment-guide.md) | ⭐ Detailed guide with screenshots for deploying to SharePoint Online |
+| [**Manual Deployment Guide**](docs/manual-deployment-guide.md) | ⭐ Browser-only deployment (No PowerShell required) |
+| [**Step-by-Step Deployment Guide**](docs/step-by-step-deployment-guide.md) | PowerShell deployment with detailed instructions |
 | [Quick Start](QUICK-START.md) | Quick reference card for rapid deployment |
 | [Deployment Runbook](docs/deployment-runbook.md) | Technical deployment instructions and procedures |
 | [Administrator Guide](docs/administrator-guide.md) | Daily operations and maintenance |
